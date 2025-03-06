@@ -7,7 +7,7 @@ export default defineConfig({
   base: "/MYportfolio",
   build: {
     rollupOptions: {
-      external: ['react-tilt']
+      external: []
     }
   }
 });
