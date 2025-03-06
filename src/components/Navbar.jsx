@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-
+import resume from "/Resume.pdf"; 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -44,11 +44,17 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+            Vaibhav &nbsp;
+            <span className='sm:block hidden'> </span>
           </p>
         </Link>
-
+        <div className="flex items-center gap-4">
+          <a href={resume} download>
+            <div className="bg-[#915EFF] text-white text-sm py-1 px-3 rounded-full hover:bg-[#7b4ed9] transition duration-300">
+              Download Resume
+            </div>
+          </a>
+        </div>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li

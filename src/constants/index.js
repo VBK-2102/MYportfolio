@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -19,11 +18,13 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+
 } from "../assets";
+import project1 from "../assets/projects/project-1.jpg"; 
+import project2 from "../assets/projects/project-2.jpg";
+import project3 from "../assets/projects/project-3.jpg";
+import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.jpg";
 
 export const navLinks = [
   {
@@ -46,20 +47,24 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Software Development Engineer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Data Scientest",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
 const technologies = [
+  { 
+    name: "Python",
+    icon:redux,
+  },
+  {
+    name:"c",
+    icon:figma,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -69,102 +74,78 @@ const technologies = [
     icon: css,
   },
   {
+    name:"Sql",
+    icon:mongodb,
+  },
+  {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name:"Pandas",
+    icon : tailwind,
   },
   {
-    name: "docker",
+    name:"falsk",
     icon: docker,
   },
+
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    "title": "Research Intern",
+    "company_name": "Risk Guard Enterprise Solutions (OPC) Private Limited",
+    "icon": meta,
+    "iconBg": "#383E56",
+    "date": "Dec 2024 – Present",
+    "points": [
+      "Conducted data collection, analysis, and documentation for various projects.",
+      "Assisted in study design and conducted literature reviews.",
+      "Prepared comprehensive reports to share research findings with stakeholders.",
+      "Contributed to actionable insights by analyzing data and presenting results effectively."
+    ]
+}
+,
+  {
+    title: " Team Lead - Software Development Engineer (SDE) Intern",
+    company_name: " Bluestock Fintech",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Nov 2024 - Dec 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led a team in developing a web application and REST API for IPO details." ,
+      "focusing on quality and security. Oversaw task management, daily updates, and weekly progress reporting","Contributed to backend development with Django, database integration, and UI/UX design implementation.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Internship",
+    company_name: "TEQUED Labs",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Oct 2022 - Nov 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed coursework that covered cybersecurity fundamentals",
+      " ethical hacking practices, and Python",
+      " enhancing skills in securing systems and understanding vulnerabilities.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Internship",
+    company_name: "TEQUED Labs",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Oct 2023 - Dec 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Python programming, enhancing skills in securing systems and understanding vulnerabilities.Pandas ,Python Libraries",
     ],
   },
 ];
@@ -196,70 +177,108 @@ const testimonials = [
   },
 ];
 
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+const projects = [{
+  name: "Plant Disease Detection System",
+  description:
+    "A crucial tool for modern agriculture that uses Convolutional Neural Networks built in PyTorch to detect plant diseases efficiently.",
+  tags: [
+    {
+      name: "python",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "pytorch",
+      color: "green-text-gradient",
+    },
+    {
+      name: "machine learning",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: project1,
+  source_code_link: "https://github.com/VBK-2102/plant_disease_detection.git",
+},
+{
+  name: "Data Science Project",
+  description:
+    "Led the end-to-end process of gathering, cleaning, visualizing, and modeling data using Python.",
+  tags: [
+    {
+      name: "python",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "data analysis",
+      color: "green-text-gradient",
+    },
+  ],
+  image: project2,
+  source_code_link: "https://github.com/VBK-2102/Data-science-.git",
+},
+{
+  name: "Heart Disease Prediction",
+  description:
+    "Built machine learning models to predict heart disease based on clinical features, achieving an accuracy of 86%.",
+  tags: [
+    {
+      name: "python",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "machine learning",
+      color: "green-text-gradient",
+    },
+    {
+      name: "data visualization",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: project3,
+  source_code_link: "https://github.com/VBK-2102/Heart-Disease-Prediction.git",
+},
+{
+  name: "Farmer Management System",
+  description:
+    "A web-based platform developed using Python Flask to streamline the sale and purchase of agricultural products.",
+  tags: [
+    {
+      name: "python",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "flask",
+      color: "green-text-gradient",
+    },
+    {
+      name: "mysql",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: project4,
+  source_code_link: "https://github.com/VBK-2102/FMS.git",
+},
+{
+  name: "Skin Disease Detection",
+  description:
+    "An advanced system for diagnosing skin diseases through image recognition, utilizing deep learning techniques for accurate results.",
+  tags: [
+    {
+      name: "python",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "deep learning",
+      color: "green-text-gradient",
+    },
+    {
+      name: "image processing",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: project5,
+  source_code_link: "https://github.com/VBK-2102/Skin_dieseases_detection",
+},
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };
